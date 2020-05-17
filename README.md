@@ -23,8 +23,6 @@ terraform apply -auto-approve
 
 ### Notes
 
-Notes regarding the integration:
-
 - The lambda is designed to handle many messages at one time, but the queue is configured to only pass one message. This is designed by default so that fault tolerance is built in (so that only one message fails during a request)
 - `email` and `email-dl` exist for pasring. `email-dl` is for any errors returned by `SES`, which need manual intervention
 - Mailgun setup for testing puropses, which can be removed. The default handler is `ses`.
