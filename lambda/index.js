@@ -3,7 +3,7 @@ const AWS = require("aws-sdk");
 const SES = new AWS.SES({ region: "eu-west-1" });
 
 // Mailgun
-const api_key = null;
+const api_key = "api-key-here";
 const domain = "therunningmind.steadweb.com";
 const mailgun = require("mailgun-js")({
   apiKey: api_key,
